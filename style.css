@@ -1,0 +1,306 @@
+html {
+    height: 100vh;
+}
+
+body {
+    background-image: linear-gradient(lightblue , pink);
+    margin: 0 auto;
+}
+
+* {
+    font-family: 'Oswald', sans-serif;
+}
+
+/*header*/
+
+h1 {
+    font-size: 5vw;
+    text-align: center;
+    margin: 0 auto;
+    cursor: default;
+    letter-spacing: 1vw;
+    cursor: pointer;
+}
+
+#h1Wrap {
+    width: 35vw;
+    margin: auto;
+}
+
+/*navbar*/
+
+nav {
+    position: absolute;
+    top: 0vh;
+    left: 0px;
+    cursor: default;
+    font-size: 3vw;
+    margin: 0 auto;
+    width: 0px;
+    height: 0px;
+}
+
+nav>div {
+    color: white;
+    position: absolute;
+    top: 15vh;
+    width: 100%;
+}
+
+nav>p {
+    color: white;
+}
+
+nav>p:nth-child(1)
+{
+    position: absolute;
+    top: 0px;
+    margin: 0 auto;
+    text-shadow: 1px 1px white;
+}
+
+nav>p:nth-child(2) {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 0 auto;
+}
+
+.navFull {
+    width: 18vw;
+    height: 100vh;
+    background-color: black;
+    z-index: 1;
+    opacity: 0.8;
+    transition-duration: 0.5s;
+}
+
+.navFullCancel {
+    width: 0px;
+    height: 0px;
+}
+
+#close {
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+}
+
+#div1:hover, #div2:hover, #div3:hover, #div4:hover {
+    color: rgb(0, 191, 255);
+    cursor: pointer;
+}
+
+div>div { /*nav divs size*/
+    margin-bottom: 2vh;
+    font-size: 2.5vw;
+}
+
+/*Enter game - choose game mode*/
+
+#enterGame {
+    height: 50vh;
+    width: 100vw;
+    background-color: white;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+h2 {
+    text-align: center;
+    cursor: default;
+    letter-spacing: 0.5vw;
+}
+
+#vsPc {
+    width: 10vw;
+    height: 10vh;
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translateX(-50%);
+}
+
+#vsPc:hover {
+    border: 2px solid rgb(16, 1, 70);
+}
+
+#vsFriend {
+    width: 10vw;
+    height: 10vh;
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    right: 40%;
+    transform: translateX(50%);
+}
+
+#vsFriend:hover {
+    border: 2px solid rgb(16, 1, 70);
+}
+
+.vsDownLine {
+    display: block;
+}
+
+#xGif {
+    width: 20%;
+    height: 80%;
+    position: absolute;
+    top: 15%;
+    left: 0px;
+}
+
+#circleGif {
+    width: 25%;
+    height: 81%;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*Enter game - Fullfill details*/
+
+input:nth-child(2)
+{
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    top: 30%;
+}
+input:nth-child(3)
+{
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    top: 30%;
+}
+input:nth-child(4)
+{
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    top: 50%;
+}
+
+input {
+    width: 10%;
+    height: 8%;
+    text-align: center;
+}
+
+#startGame {
+    position: absolute;
+    bottom: 20%;
+    right: 50%;
+    transform: translateX(50%);
+    cursor: pointer;
+}
+
+.redBorder {
+    border: 2px solid red;
+}
+
+#error {
+    color: red;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 0px;
+}
+
+.enterGameOver {
+    width: 0px !important;
+    transition-duration: 2s;
+    font-size: 50%;
+    opacity: 0;
+}
+
+.moveToLeft {
+    left: 30% !important;
+    transition-duration: 2s;
+    opacity: 0;
+}
+
+.moveToright {
+    right: 30% !important;
+    transition-duration: 2s;
+    opacity: 0;
+}
+
+/*footer*/
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100vw;
+}
+
+footer>p {
+    text-align: center;
+}
+
+/*Disapeer and back*/
+
+.delete {
+    display: none;
+}
+
+
+/*Table Design*/
+
+table {
+    border-collapse: collapse;
+    width: 50vw;
+    height: 70vh;
+    border: 5px solid black;
+    margin: auto;
+}
+
+td {
+    border: 5px solid black;
+}
+
+#popUpTableSize {
+    width: 20vw;
+    height: 20vh;
+    background-color: gold;
+}
+
+.cross {
+    background-image: url(x.png);
+    background-size: 100% 100%;
+}
+
+.circle {
+    background-image: url(circle.png);
+    background-size: 100% 100%;
+}
+
+
+#reset{
+    position: absolute;
+    right: 60%;
+    transform: translateX(50%);
+    bottom: 7vh;
+}
+
+#return{
+    position: absolute;
+    right: 40%;
+    transform: translateX(50%);
+    bottom: 7vh;
+}
+
+#loadGame {
+    position: absolute;
+    bottom: 0px;
+    right: 50%;
+    transform: translateX(50%);
+}
+

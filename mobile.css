@@ -1,0 +1,75 @@
+@media screen and (max-width:768px)
+{
+    @media screen and (orientation:portrait)
+    {
+
+    /*header*/
+    
+    h1 {
+        font-size: 15vw;
+    }
+
+    #h1Wrap {
+        width: 80vw;
+    }
+
+    nav {
+        font-size: 5vw;
+    }
+
+    .navFull {
+        width: 100vw;
+    }
+
+    div>div {
+        font-size: 10vw;
+        text-align: center;
+    }
+
+    #close {
+        font-size: 10vw;
+    }
+
+    #circleGif {
+        width: 50%;
+        height: 70%;
+        left: 60vw;
+    }
+
+    #vsPc {
+        width: 20vw;
+        height: 13vh;
+        cursor: pointer;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #vsFriend {
+        width: 20vw;
+        height: 13vh;
+        cursor: pointer;
+        position: absolute;
+        top: 55%;
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    input {
+        width: 25vw;
+    }
+
+    #error {
+        width: 100vw;
+        text-align: center;
+    }
+}
+
+@media screen and (orientation:landscape)
+{
+
+}
+
+}
+

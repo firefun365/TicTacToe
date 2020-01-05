@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <div id="h1Wrap">
+            <h1>Tic Tac Toe</h1>
+        </div>
+    </header>
+
+
+    <nav id="menu">
+        &#9776;
+        <p id="men" class="delete">Menu</p>
+        <p id="close" class="delete menuText">x</p>
+        <div> 
+            <div id="div1" class="delete menuText">Ranking Table</div>
+            <div id="div2" class="delete menuText">Table Size</div>
+            <div id="div3" class="delete menuText">Save</div>
+            <div id="div4" class="delete menuText">Other Data</div>
+        </div>
+    </nav>
+
+
+    <div id="enterGame">
+        <section>
+            <h2>Choose Mode</h2>
+            <button id="vsPc"><span class="vsDownLine">VS</span> Computer</button>
+            <button id="vsFriend"><span class="vsDownLine">VS</span> Friend</button>
+            <img id="xGif" src="xGif.gif" alt="">
+            <img id="circleGif" src="circleGif.gif" alt="">
+        </section>
+
+        <section>
+            <h2 class="delete">Please fill in the details</h2>
+            <input class="delete" type="text" placeholder="Enter your name">
+            <input class="delete" type="text" placeholder="Player 1 name">
+            <input class="delete" type="text" placeholder="Player 2 name">
+            <p id="error" class="delete">You need to write at least 1 character</p>
+            <button id="startGame" class="delete">Start a new game</button>
+        </section>
+    </div>
+
+
+
+    <main>
+        <table class="delete">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </main>
+      
+<button class="delete" id="reset">Restart</button>
+<button class="delete" id="return">return</button>
+<button class="delete" id="loadGame">Load Game</button>
+
+    <div>
+        <p class="backTimer delete">3</p>
+        <p class="backTimer delete">2</p>
+        <p class="backTimer delete">1</p>
+    </div>
+    
+
+
+    <section>
+        <div id="popUpRankingTable"></div>
+        <div id="popUpTableSize" class="delete">
+            <p>Please enter how much lines and collums you want to play with</p>
+            <input id="tableSizeInput" type="text" placeholder="enter number">
+            <button id="tableSizeButton">Set</button>
+            <p></p> <!--Dynamic html by input, how much x on x the table size will be-->
+        </div>
+        <div id="popUpSave"></div>
+        <div id="popUpOtherData"></div>
+    </section>
+
+    <p id="time" class="delete">timer</p>
+
+    <footer>
+        <p>Created by: liranweb99@gmail.com</p>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
